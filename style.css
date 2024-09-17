@@ -1,0 +1,491 @@
+.logo img {
+    max-height: 50px; /* Adjust the size of the logo */
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Logo on the left, links on the right */
+    align-items: center; /* Vertically center the logo and links */
+    padding: 10px 20px; /* Add padding around the navbar */
+    
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    justify-content: space-between; 
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after {
+    content: ''; /* No text, just the underline */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Start with 0 width */
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand underline to full width */
+  }
+.auth-buttons{
+    display: flex;
+    gap: 10px
+    
+}
+.auth-buttons a{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.buttonlogin {
+    color:#4CAF4F;
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    border:2px solid #4CAF4F;
+    border-radius: 5px;
+}
+
+.signupbutton{
+    padding-top: 5px;
+    background-color: #4CAF4F;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.main-content {
+    background-color: #f5f5f5; /* Background color for the main content */
+    padding: 20px; /* Padding around the content */
+}
+.lessons{
+    font-size: 64px;
+    font-family: "Inter",sans-serif;
+    margin-bottom: 0px;
+}
+.from8{
+    font-size: 64px;
+    font-family: "Inter",sans-serif;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #4CAF4F;
+}
+.tagline{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Inter",sans-serif;
+}
+body {
+    margin: 0; /* Remove default margin, especially useful in modern browsers */
+    margin-left: 144px;
+
+    margin-right: 144px; /* Add padding around the entire page content */
+  }
+.registerbutton{
+    padding-left: 0px;
+    
+    background-color: #4CAF4F;
+    padding-top: 5px;
+    
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+}
+.dots{
+    display: block;
+    margin: 0 auto;
+}
+.clients{
+    margin-top: 60px;
+    text-align: center;
+    font-family: "Inter",sans-serif;
+}
+.our_client{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 36;
+}
+.we_have_been{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    font-size: 16;
+    margin-bottom: 0px;
+}
+.manage{
+    text-align: center;
+    margin: 0px;
+}
+.client_logos{
+    margin-bottom: 50px;
+}
+.client_list{
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Distribute space equally between items */
+   
+    gap: 170px;
+    margin: 0 auto;
+    padding: 40px 0;
+    align-items: flex-start;
+}
+
+.client_item {
+
+    flex-direction: column;
+    align-items: center;
+   
+    text-align: center;
+    width: 200px; /* Limit the width of each block */
+}
+.the_unseen{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0px;
+   
+    margin-top: 0px;
+    border: 0px;
+
+}
+
+.forcolumn{
+    width: 400px;
+}
+.learnmorebutton{
+    padding-top: 5px;
+    background-color: #4CAF4F;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 150px;
+}
+
+.oneh1{
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: "Inter" sans-serif ;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.anoh1{
+    margin-left: 100px;
+    color: #4CAF4F;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Inter" sans-serif ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.apara{
+    margin-left: 100px;
+}
+.big{
+    display: flex;
+    gap: 200px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Creates two columns */
+    grid-auto-rows: minmax(100px, auto); /* Sets a minimum height for rows */
+    column-gap: 60px; /* Space between grid items */
+    justify-content: center;
+     
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tocol{
+    
+    display: flex;
+    flex-direction: column;
+}
+.tocol h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.tocol p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.info img{
+    width: 40px;
+    height: 40px;
+}
+.howtodesign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0px;
+    margin-top: 0px;
+    border: 0px;
+}
+
+.forcolumn1{
+    width: 550px;
+}
+.unseen_text1{
+    font-size: 40px;
+}
+.learnmorebutton1{
+    padding-top: 5px;
+
+
+    background-color: #4CAF4F;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 150px;
+}
+.testimony{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0px;
+    margin-top: 200px;
+    border: 0px;
+}
+.forcolumn2{
+    width: 550px;
+}
+.forcolumn2 h2{
+    color: #4CAF4F;
+    margin-bottom: 0px;
+}
+.forcolumn2 h3{
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: small;
+}
+.testimony img{
+    border-radius: 5px;
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Ensures the image fills the container */
+    object-fit: cover; /* Crop the image, maintaining aspect ratio */
+    object-position: center;
+    
+}
+.img-container{
+    width: 300px; /* Desired width */
+    height: 300px; /* Desired height */
+    overflow: hidden; /* Hide the overflowed part of the image */
+    position: relative;
+}
+.rightside{
+    width: 20px !important;
+    margin-left: 0px;
+    height: auto !important;
+}
+.forcolumn2 a{
+    width: 20px;
+    height: auto;
+}
+.forcolumn2 button{
+    color: #4CAF4F;
+    font-size: small;
+    background-color: white;
+    margin-right: 0px;
+}
+.manylogos{
+    display: flex;
+    flex-direction: row;
+}
+.manylogos img{
+    width: 400px;
+    
+}
+.enthocaring{
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.enthocaring p{
+    max-width: 550px;
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.enthocaring h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.images img{
+    width: 286px;
+    height: auto;
+    border-radius: 8px;
+}
+.readmorebutton{
+    color:#4CAF4F;
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    border:2px solid #4CAF4F;
+    border-radius: 5px;
+}
+.themain{
+    position: relative;
+    display: inline-block;
+}
+.themain img {
+    display: block;
+     /* Ensures the image doesn't have extra space below */
+    width: 286px; /* Optional: Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+.theextrabox {
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Aligns the div to the bottom of the container */
+    transform: translateX(-50%); /* Shifts the div left by 50% of its width to truly center it */
+    bottom: -130px;
+    color: black; /* Text color */
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+    background-color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+}
+
+.wannatry{
+    margin-top: 200px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "Inter",sans-serif;
+}
+
+.getademo{
+    
+    max-width: 200px;
+    padding-top: 5px;
+    background-color: #4CAF4F;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    
+}
+.wannatrycontainer{
+    text-align: center;
+}
+.footer{
+    border-radius: 5px;
+    background-color: #263238;
+    color: white;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logofooter{
+    margin-top: 20px;
+}
+.footer div{
+    flex: 1;
+    margin-right: 20px;
+}
+.email-signup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#dcdcdc;
+    border-radius: 5px;
+}
+.footer > div:nth-child(3) {
+    margin-right: 50px; /* Add more space between the sections */
+}
+.footer ul {
+    list-style: none !important; 
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer a {
+    color: white; /* Change link color to white */
+    text-decoration: none !important; /* Remove underline from links */
+}
+
+.email-signup input[type="email"] {
+    padding: 10px; /* Padding inside the input field */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the input field */
+    font-size: 16px; /* Font size for the text */
+    width: 300px; /* Width of the input field */
+    margin-right: 10px; /* Space between the input field and button */
+    background-color: #dcdcdc; /* Gray background color for the input field */
+    color: #333; /* Text color inside the input field */
+}
+.send-button{
+    display: flex;
+    align-items: center;
+    background-color: #dcdcdc;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    height: 10px;
+
+}
+.send-button img{
+    width: 24px;
+    height:auto;
+    background: none;
+}
+
+.Supprt-links li a{
+    text-decoration: none;
+}
+.Supprt-links{
+
+}
